@@ -18,7 +18,7 @@ class Program
 
             string choice = Console.ReadLine();
 
-            switch(choice)
+            switch (choice)
             {
                 case "1":
                     GradeCalculator.Run();
@@ -27,6 +27,22 @@ class Program
                 case "2":
                     TicketPriceCalculator.Run();
                     break;
+
+                case "3":
+                    TriangleTypeIdentifier.Run();
+                    break;
+
+                case "0":
+                    Console.WriteLine("Goodbye!");
+                    return;
+
+                default:
+                    Console.WriteLine("Invalid choice. Please choose a number between 0 and 3.");
+                    break;
+
+
             }
         }
+
+    }
 }
