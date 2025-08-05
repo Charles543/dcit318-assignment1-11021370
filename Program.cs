@@ -23,6 +23,10 @@ class Program
                 case "1":
                     GradeCalculator.Run();
                     break;
+
+                case "2":
+                    TicketPriceCalculator.Run();
+                    break;
             }
         }
 }
